@@ -12,30 +12,32 @@
 </head>
 <body>
 <div calss="menu">
-<h1> Расписание 11 классов</h1>
+    <h1> Расписание 11 классов</h1>
 
-{% if user.authorized %}
-<p>you're loged in </p>
-{% else %}
-    <a  href="{% url 'login'%}"><button class="log">login </button></a>
-{% endif %}
+    {% if user.authorized %}
+    <p>you're loged in </p>
+    {% else %}
+    <a href="{% url 'login'%}">
+        <button class="log">login</button>
+    </a>
+    {% endif %}
 </div>
 
 
 {% for class in classes %}
 <div class="consub">
-<div class="subjects">
-    <h3>{{class.class_name}}</h3>
-    <ol>
-        <li>{{class.first_s}}</li>
-        <li>{{class.second_s}}</li>
-        <li>{{class.third_s}}</li>
-        <li>{{class.fourth_s}}</li>
-        <li>{{class.fifth_s}}</li>
-        <li>{{class.sixth_s}}</li>
-        <li>{{class.seventh_s}}</li>
-    </ol>
-</div>
+    <div class="subjects">
+        <h3>{{class.class_name}}</h3>
+        <ol>
+            <li>{{class.first_s}}</li>
+            <li>{{class.second_s}}</li>
+            <li>{{class.third_s}}</li>
+            <li>{{class.fourth_s}}</li>
+            <li>{{class.fifth_s}}</li>
+            <li>{{class.sixth_s}}</li>
+            <li>{{class.seventh_s}}</li>
+        </ol>
+    </div>
 </div>
 {% endfor %}
 </body>
