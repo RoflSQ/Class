@@ -4,11 +4,10 @@ color: black;
 font-family: "Helvetice Neue", Helvetice, Arial, sans-serif;
 }
 
-body{
-
-margin: 0px 100px 0px 100px;
-background:#F5F5F5;
-
+body{]
+position:absolut;
+max-width:50%;
+margin: 0 auto;
 }
 
 
@@ -72,16 +71,14 @@ width:200px;
 
 .log{
 text-color: black;
-position:absolut;
 font-size: 20px;
 
-right:0px;
-position:fixed;
 background: white;
-
+position:relative;
+position:right;
 border-radius:10px;
 display: inline-block;
-right:0px;
+
 
 padding:10px 20px 10px 20px;
 border: none;
@@ -114,10 +111,11 @@ inset 0px 8px 7px #001135;
 }
 
 
-form{
 
-
-
+.log_menu{
+position:absolut;
+padding:20px;
+top:10%;
 
 border-radius:10px;
 box-shadow:
@@ -130,11 +128,17 @@ inset 0px 4px 0px #555,
 inset 0px 5px 0px #444,
 inset 0px 7px 0px #333,
 inset 0px 8px 7px #001135;
+
 }
 
-.log_menu{
-padding:20px;
+
+.log_menu label{
+position:absolut;
+font-size: 12px;
+margin-right:100%;
 }
-#id_username{
+
+.log_menu input{
+
 
 }
