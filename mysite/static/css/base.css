@@ -1,17 +1,25 @@
 *{
 text-decoration: none;
-color: black;
 font-family: "Helvetice Neue", Helvetice, Arial, sans-serif;
+background-color:width;
+
 }
 
-body{]
+body{
+position:absolut;
+max-width:100%;
+margin: 0 auto;
+}
+.conteiner{
 position:absolut;
 max-width:60%;
 margin: 0 auto;
 }
-
-
+.bg-light {
+    --bs-bg-opacity: 0;
+    }
 h1{
+ top:10px;
  font-size: 20px;
  position:relative;
  display: inline-block;
@@ -31,27 +39,7 @@ display: inline;
 .list{
 margin:0-auto;
 }
-.subjects ol{
-position:relative;
-font-size: 20px;
-padding-bottom: 20px;
-background: white;
-border-radius: 15px;
-padding:20px;
-padding-left:35px;
 
-box-shadow:
-inset 0 0 100px hsla(0,0%,0%,.2),
-inset 0px 1px 5px #999,
-inset 0px 2px 0px #888,
-inset 0px 2px 0px #777,
-inset 0px 3px 0px #666,
-inset 0px 4px 0px #555,
-inset 0px 5px 0px #444,
-inset 0px 7px 0px #333,
-inset 0px 8px 7px #001135;
-
-}
 
 .subjects ol li{
 
@@ -68,38 +56,13 @@ color: width;
 
 
 .menu{
+top:20px;
 position:relative;
 display: inline;
 width:200px;
 }
 
-.log{
-text-color: black;
-font-size: 20px;
 
-background: white;
-
-position:relative;
-float:right;
-
-border-radius:10px;
-display: inline-block;
-
-
-padding:10px 20px 10px 20px;
-border: none;
-
-box-shadow:
-inset 0 0 100px hsla(0,0%,0%,.2),
-inset 0px 1px 5px #999,
-inset 0px 2px 0px #888,
-inset 0px 2px 0px #777,
-inset 0px 3px 0px #666,
-inset 0px 4px 0px #555,
-inset 0px 5px 0px #444,
-inset 0px 7px 0px #333,
-inset 0px 8px 7px #001135;
-}
 
 .log:hover{
 cursor:pointer;
@@ -127,7 +90,8 @@ position:absolut;
 padding:20px;
 top:10%;
 
-
+margin: 0 auto;
+width: 50%;
 
 
 margin: 0-auto;
@@ -182,7 +146,7 @@ border-radius:7px;
 
 position:relative;
 
-float:right;
+
 display: inline-block;
 
 padding:7px 30px 7px 30px;
@@ -213,4 +177,8 @@ inset 0px 4px 0px #555,
 inset 0px 5px 0px #444,
 inset 0px 7px 0px #333,
 inset 0px 8px 7px #001135;
+}
+
+.g{
+padding-right:20px;
 }
