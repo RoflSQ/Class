@@ -13,14 +13,16 @@
 </head>
 <body>
 
-<div class="menu">
+        <div class="regist">
     <form>
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">log</button>
 
     </form>
-    <a href="{% url 'signup' %}">reg</a>
+    <a href="{% url 'register' %}">reg</a>
 </div>
+
+
 </body>
 </html>

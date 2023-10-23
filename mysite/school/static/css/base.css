@@ -1,0 +1,37 @@
+*{
+text-decoration: none;
+font-family: "Helvetice Neue", Helvetice, Arial, sans-serif;
+
+}
+
+
+body{
+position:absolut;
+max-width:100%;
+margin: 0 auto;
+background: black;
+}
+
+.conteiner{
+position:absolut;
+max-width:60%;
+margin: 0 auto;
+}
+
+.consub{
+position:relative;
+display:inline-block;
+margin-top:10px;
+
+}
+
+.subjects{
+width:200px;
+box-shadow:0 0 20px #555;
+
+}
+
+.list{
+position:relative;
+text-align:center;
+}
