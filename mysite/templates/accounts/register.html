@@ -1,18 +1,78 @@
 {% extends 'base.html'%}
 {%block content%}
-<div calss="menu">
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+
     <h1>Регbстрируйтесь</h1></div>
+
+<form class="log_menu">
+  <div class="mb-3">
+      {%csrf_token%}
+      <label  class="form-label">Username: {{form.username}}</label>
+    <label  class="form-label">Email: {{form.email}}</label>
+    <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Password: {{form.password1}}</label>
+      <label class="form-label">Password: {{form.password2}}</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Reg</button>
+</form>
+
 <form>
-    <div class="log_menu">
-{%csrf_token%}
-        <p>Username: {{form.username}}</p>
-        <p>Email: {{form.email}}</p>
-        <p>Password: {{form.password1}}</p>
-        <p>Repeat your password: {{form.password2}}</p>
-        <div class="regist">
-    <a class="g" href="{% url 'login'%}">log</a>
-        </div>
-        </div>
-    </form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Мы никогда никому не передадим вашу электронную почту.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Проверить меня</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+
+<form>
+  <fieldset disabled>
+    <legend>Пример отключенного набора полей</legend>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">Отключенное поле ввода</label>
+      <input type="text" id="disabledTextInput" class="form-control" placeholder="Отключенное поле ввода">
+    </div>
+    <div class="mb-3">
+      <label for="disabledSelect" class="form-label">Отключено меню выбора</label>
+      <select id="disabledSelect" class="form-select">
+        <option>Отключен элемент выбора</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+        <label class="form-check-label" for="disabledFieldsetCheck">
+          Не могут это проверить
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+  </fieldset>
+</form>
+
+<label for="customRange1" class="form-label">Пример диапазона</label>
+<input type="range" class="form-range" id="customRange1">
+
+
+
+    <h5 class="card-title">Заголовок карточки</h5>
+    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+  </div>
+</div>s
+
 <button type="submit"><a href="">reg</a></button>
 {% endblock %}
