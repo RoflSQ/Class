@@ -5,10 +5,14 @@
 <form>
     <div class="log_menu">
 {%csrf_token%}
-{{form.as_p}}
+        <p>Username: {{form.username}}</p>
+        <p>Email: {{form.email}}</p>
+        <p>Password: {{form.password1}}</p>
+        <p>Repeat your password: {{form.password2}}</p>
         <div class="regist">
     <a class="g" href="{% url 'login'%}">log</a>
-    <button type="submit"><a href="">reg</a></button>
         </div>
         </div>
+    </form>
+<button type="submit"><a href="">reg</a></button>
 {% endblock %}
