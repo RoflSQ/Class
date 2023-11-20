@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="static/css/phone.css">
     <title>Расписание</title>
 </head>
-<body style="    background: #19232f;">
-<div class="conteiner">
+<body >
+<img src="https://png.pngtree.com/thumb_back/fw800/background/20190831/pngtree-orange-wood-texture-background-with-wood-planks-image_310888.jpg" class="background" />
 
 <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand">Расписание 11 классов</a>
+  <div class="container-fluid" style="
+    position:absolut;
+max-width:60%;
+margin: 0 auto;">
+      <a class="navbar-brand">1</a>
+    <a class="navbar-brand" STYLE="text_align: center">Расписание </a>
     <form class="d-flex">
           <a href="{% url 'login'%}">
         <button type="button" class="btn btn-dark">login</button>
@@ -25,7 +29,7 @@
     </form>
   </div>
 </nav>
-
+<div class="conteiner">
 
 {% block content%}
 {%endblock%}

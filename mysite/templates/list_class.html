@@ -2,41 +2,42 @@
 {%block content%}
 <div class="list">
     {% for class in classes %}
-            <div class="consub">
-            <div class="subjects">
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="consub">
+        <div class="subjects">
+            <div class="card" style="max-width: 18rem;">
+                <img src='C:/Users/stud1/Desktop/Рабочая/li/djan/mysite/media/img/pap.png'>
                 <div class="card-header">
                     {{class.class_name}}
-                <div class="card-body">
-                    <ol>
-                        <p class="card-text">
-                        <li>{{class.first_s}}</li>
-                        </p>
-                        <p class="card-text">
-                        <li>{{class.second_s}}</li>
-                        </p>
-                        <p class="card-text">
-                        <li>{{class.third_s}}</li>
-                        </p>
-                        <p class="card-text">
-                        <li>{{class.fourth_s}}</li>
-                        </p>
-                        <p class="card-text">
-                        <li>{{class.fifth_s}}</li>
-                        </p>
-                        <p class="card-text">
-                        <li>{{class.sixth_s}}</li>
-                        </p>
-                        <p class="card-text">
-                        <li>{{class.seventh_s}}</li>
-                        </p>
-                    </ol>
+                    <div class="card-body">
+                        <ol>
+                            <p class="card-text">
+                            <li>{{class.first_s}}</li>
+                            </p>
+                            <p class="card-text">
+                            <li>{{class.second_s}}</li>
+                            </p>
+                            <p class="card-text">
+                            <li>{{class.third_s}}</li>
+                            </p>
+                            <p class="card-text">
+                            <li>{{class.fourth_s}}</li>
+                            </p>
+                            <p class="card-text">
+                            <li>{{class.fifth_s}}</li>
+                            </p>
+                            <p class="card-text">
+                            <li>{{class.sixth_s}}</li>
+                            </p>
+                            <p class="card-text">
+                            <li>{{class.seventh_s}}</li>
+                            </p>
+                        </ol>
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
 
     {% endfor %}
 </div>
